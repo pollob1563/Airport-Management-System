@@ -6,6 +6,13 @@ This application is a robust Java Swing-based desktop solution designed for mana
 
 ---
 
+## 🎥 Project Demo
+Click the image below to watch the full gameplay video:
+
+[![Watch the Demo](https://github.com/user-attachments/assets/eb8efffc-6d37-4c5a-baa9-fb7e831dd44a)](https://files.catbox.moe/je10c1.mp4)
+
+---
+
 ## 🌟 Key Features
 
 * **Secure Admin Control:** Access is restricted via JobID (e.g., `25-62997-2`) and Password verification to ensure only authorized personnel can manage data.
@@ -19,8 +26,6 @@ This application is a robust Java Swing-based desktop solution designed for mana
 ## 🏗️ OOP Concepts Applied
 
 This project strictly follows the four pillars of Object-Oriented Programming:
-
-
 
 * **Encapsulation:** Private attributes in the `Airport` class (like `jobID`, `flightType`, `time`) are managed through constructors to protect data integrity.
 * **Inheritance:** The `AirportFrame` class extends `JFrame`, inheriting all properties and methods of the Java Swing Frame.
