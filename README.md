@@ -53,6 +53,8 @@ This project strictly follows the four pillars of Object-Oriented Programming:
 
 **Faculty:** NYME AHMED
 
+**Semester: ** Fall 2025-26
+
 ---
 
 ## 🚀 How to Run
