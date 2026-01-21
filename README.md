@@ -1,54 +1,63 @@
-# ✈️ Airport-Management-System
+# ✈️ Airport Management System - DAC
 
-**Semester Final Project** for **CSC 1205 (Object Oriented Programming 1)** at **American International University-Bangladesh (AIUB)**. 
+**Semester Final Project** for **CSC 1205 (Object Oriented Programming 1)** at **American International University-Bangladesh (AIUB)**.
 
-This is a comprehensive Java Swing-based desktop application designed for managing airport operations. It provides a user-friendly interface for administrators to handle flight schedules, track timing, and manage passenger data.
+This application is a robust Java Swing-based desktop solution designed for managing airport operations, providing a secure environment for flight scheduling, real-time statistics, and immigration data tracking.
 
 ---
 
 ## 🌟 Key Features
 
-* **Real-time Clock:** A dynamic clock integrated into every panel (Welcome, Departure, Arrival, Admin, Stats) that updates every second using `javax.swing.Timer`.
-* **Secure Admin Control:** A dedicated Admin Panel protected by JobID and Password verification using `JPasswordField` with masking.
-* **Dynamic Flight Management:** Admins can easily add flight details using dropdown menus (`JComboBox`) for Destinations, Gate Numbers, and Check-in counters to ensure data accuracy.
-* **Real-time Input Validation:** Uses `JOptionPane` for instant feedback and `try-catch` blocks to handle empty or invalid numerical inputs (like passenger counts) without crashing.
-* **Interactive Navigation:** Smooth panel switching logic (Back/Exit) to ensure a seamless user experience across the application.
-* **Password Toggle:** Includes a "Show Password" checkbox that utilizes `setEchoChar((char)0)` to toggle visibility for user convenience.
+* **Secure Admin Control:** Access is restricted via JobID (e.g., `25-62997-2`) and Password verification to ensure only authorized personnel can manage data.
+* **Persistent Storage (File I/O):** Automatically creates and updates `Departure.txt` and `Arrival.txt` to store flight records permanently.
+* **Real-time Clock & Stats:** Features a dynamic clock updated every second via `javax.swing.Timer` and a dashboard to track total arrivals, departures, and passenger counts.
+* **Input Validation:** Integrated `try-catch` blocks and `JOptionPane` alerts to handle empty fields or invalid numerical inputs.
+* **Interactive UI:** Includes custom hover effects using `MouseListener` and a password visibility toggle.
+
+---
+
+## 🏗️ OOP Concepts Applied
+
+This project strictly follows the four pillars of Object-Oriented Programming:
+
+
+
+* **Encapsulation:** Private attributes in the `Airport` class (like `jobID`, `flightType`, `time`) are managed through constructors to protect data integrity.
+* **Inheritance:** The `AirportFrame` class extends `JFrame`, inheriting all properties and methods of the Java Swing Frame.
+* **Abstraction:** Complex backend logic, such as file management and input/output streams in `insertFlightInfo()`, is hidden from the user, providing a simple functional interface.
+* **Polymorphism:** Implements `ActionListener` and `MouseListener` to override methods like `actionPerformed` and `mouseClicked`, allowing different components to respond uniquely to user events.
 
 ---
 
 ## 📸 Screenshots
 
-### Admin Panel Interface
-![Admin Panel](image_a238f6.png)
-*Figure 1: The Administrative Control Center where flight details and schedules are managed.*
+### Welcome Portal
+![Welcome Portal](https://github.com/user-attachments/assets/eb8efffc-6d37-4c5a-baa9-fb7e831dd44a)
+
+### Admin Dashboard
+![Admin Panel](https://github.com/user-attachments/assets/7baccdbe-6d97-4aa3-8696-ee27b1e7fe9d)
 
 ---
 
 ## 🛠️ Tech Stack
-
-* **Programming Language:** Java
-* **GUI Toolkit:** Java Swing & AWT
-* **Project Type:** Desktop Application
-* **Development Environment:** VS Code / Git
+* **Language:** Java
+* **GUI Framework:** Java Swing & AWT
+* **Storage:** Local File System (.txt)
+* **Tools:** VS Code / Git
 
 ---
 
 ## 👥 Contributors
-
 * **PROSENJIT DATTA** - *Lead Developer*
 * **RABBINA TAHMID ALAM** - *Collaborator*
 
-**Semester:** Fall 2025-26  
-**Faculty Name:** NYME AHMED
+**Faculty:** NYME AHMED
 
 ---
 
 ## 🚀 How to Run
-
-1. **Prerequisites:** Ensure you have Java Development Kit (JDK) installed.
-2. **Clone the Project:** Download the repository to your local machine.
-3. **Compile and Run:** Use the following command in your terminal:
-
+1. Ensure you have **JDK** installed on your system.
+2. Clone this repository.
+3. Open your terminal in the project directory and run:
 ```bash
 javac Start.java && java Start
